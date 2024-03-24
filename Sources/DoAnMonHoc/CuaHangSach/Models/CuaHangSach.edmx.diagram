@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="57e8b09e1bb44a1f9c69f5ef96856ada" Name="Diagram1">
+        <EntityTypeShape EntityType="CuaHangSach.Models.Author" Width="1.5" PointX="5.125" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangSach.Models.Book" Width="1.5" PointX="2.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangSach.Models.Category" Width="1.5" PointX="7.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangSach.Models.Contribute" Width="1.5" PointX="7.375" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangSach.Models.Image" Width="1.5" PointX="0.5" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangSach.Models.ImageDistribution" Width="1.5" PointX="0.5" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangSach.Models.Invoice" Width="1.5" PointX="9.625" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangSach.Models.InvoiceDetail" Width="1.5" PointX="9.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangSach.Models.Publisher" Width="1.5" PointX="5.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangSach.Models.Status" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="CuaHangSach.Models.FK_Contribute_Author" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangSach.Models.FK_ImageDistribution_Author" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangSach.Models.FK_Book_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangSach.Models.FK_Book_Publisher" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangSach.Models.FK_Book_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangSach.Models.FK_Contribute_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangSach.Models.FK_ImageDistribution_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangSach.Models.FK_InvoiceDetails_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangSach.Models.FK_ImageDistribution_Image" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangSach.Models.FK_InvoiceDetails_Invoice" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

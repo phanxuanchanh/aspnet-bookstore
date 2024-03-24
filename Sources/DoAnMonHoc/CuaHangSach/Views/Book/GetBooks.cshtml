@@ -1,0 +1,31 @@
+﻿@using CuaHangSach.Models 
+
+@{
+    Layout = "~/Views/Shared/_BookLayout.cshtml";
+}
+
+    <section class="recent-book-sec">
+        <div class="container">
+            <div class="title">
+                <h2>Sách được xem nhiều nhất</h2>
+                <hr>
+            </div>
+            <div class="row">
+                @foreach (BookAndImage bookAndImage in Model)
+                {
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="item">
+
+                            <img src="~/Photos/@bookAndImage.images.FirstOrDefault().source" alt="img">
+                            <h3><a href="@Url.Action("Details", "Book", new { id = bookAndImage.book.ID, url = bookAndImage.book.url.Trim()})">@bookAndImage.book.name</a></h3>
+                            <h6><span class="price">@bookAndImage.book.price</span> / <a href="@Url.Action("Details", "Book", new { id = bookAndImage.book.ID, url = bookAndImage.book.url.Trim()})">Mua ngay</a></h6>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="btn-sec">
+                <a href="@Url.Action("TopBooksByView", "Book")" class="btn gray-btn">Xem tất cả sách được xếp hạng theo lượt xem</a>
+            </div>
+        </div>
+    </section>
+
